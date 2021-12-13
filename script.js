@@ -11,7 +11,7 @@ function generateRandomNum() {
     if (minNum > maxNum || !minInput.value === "" || maxInput.value === ""){
         randomNumSpan.innerHTML = "Invalid Input"
     } else {
-        const randomNum = Math.floor((maxNum - minNum) * Math.random()) + minNum
+        const randomNum = Math.floor((maxNum - minNum +1) * Math.random()) + minNum
         randomNumSpan.innerHTML = randomNum
     }
     /* 
